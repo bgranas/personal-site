@@ -8,6 +8,7 @@
 	background-image: image_url('IMG_3258.JPG');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position:center;
 	display: flex;
 	position: relative;
 	
@@ -42,7 +43,6 @@
 		h1 {
 			color: white;
 			font-size: 72px;
-			font-family: 'Permanent Marker', cursive;
 
 			.lastn {
 				display: block;
@@ -55,9 +55,35 @@
 		bottom: 20px;
 		left: 20px;
 
+		i {
+			color: white;
+			z-index: 2000;
+		}
 		span {
 			color: white;
 			font-size: 16px;
 		}
+	}
+
+	@media only screen and (max-width: $xs-max-width-landscape) { //xs landscape	
+
+			.name-row {
+				width: 300px;
+				margin-top: 10%;
+			}
+			.name-holder {
+
+			h1 {
+				font-size: 60px;
+			}
+		}
+	}
+
+	@media only screen and (max-width: $xs-max-width-portrait) { // xs portrait
+		.name-row {
+			width: 300px;
+			margin-top: 30%;
+		}
+
 	}
 }

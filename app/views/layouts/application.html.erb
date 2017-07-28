@@ -7,20 +7,29 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://use.fontawesome.com/7ff43fbcaf.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
 	<div class="nav-container">
 		<div class="nav-right">
 			<ul class="nav-list">
-				<li class="nav-item"><span>Photography</span></li>
-				<li class="nav-item"><span>Resume</span></li>
-				<li class="nav-item"><span>About</span></li>
+				<li class="nav-item"><span><%= link_to resume_url do %>Resume<% end %></span></li>
+				<li class="nav-item"><span><%= link_to photography_url do %>Photography<% end %></span></li>
+				<li class="nav-item"><span><%= link_to about_url do %>About<% end %></span></li>
 			</ul>
 		</div>
 	</div>
+
+	<% if @main %>
+		<section class="hero-section">	
+			<div class="pages-hero">
+				<h1><%= @main %></h1>
+			</div>
+		</section>
+	<% end %>
 
     <%= yield %>
   </body>

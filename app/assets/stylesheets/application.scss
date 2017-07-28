@@ -17,12 +17,15 @@
 
 //Utilities
 @import
-	'utilities/variables';
+	'utilities/variables',
+	'base/base';
 
 //Components
 @import
-	'components/nav';
+	'components/nav',
+	'components/pages-hero';
 
 //Pages
 @import 
-	'pages/index';
+	'pages/index',
+	'pages/resume';

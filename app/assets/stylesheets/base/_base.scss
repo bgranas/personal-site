@@ -1,0 +1,65 @@
+$iphone5-max-width: 320px;
+$xs-max-width-landscape: 767px;
+$xs-max-width-portrait: 420px;
+
+$sm-min-width: 768px;
+$sm-max-width: 991px;
+$md-min-width: 992px;
+$md-max-width: 1199px;
+$lg-min-width: 1200px;
+
+/* Media Queries for reference */
+@media only screen and (max-width: $xs-max-width-portrait){ // xs
+
+}
+
+@media (min-width: $sm-min-width) and (max-width: $sm-max-width){ // sm
+}
+
+@media (min-width: $md-min-width) and (max-width: $md-max-width){ // md
+}
+
+@media (min-width: $lg-min-width) { // lg
+}
+
+a {
+  color: white;
+  
+
+  &:hover {
+    color: lightgrey;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+/*html,
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: white;
+  color: $gray;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $dark-blue-text;
+}
+
+a {
+  color: $primary-color;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}
+*/
