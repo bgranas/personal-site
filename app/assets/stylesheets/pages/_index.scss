@@ -1,0 +1,27 @@
+// Place all the styles related to the Page controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.background-cover {
+	height: 100vh;
+	width: 100%;
+	background: green;
+	display: flex;
+	position: relative;
+	
+	.name-row{
+		width:250px;
+		margin-top: 25%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.name-holder {
+
+		h1 {
+			color: white;
+			font-size: 48px;
+			font-family: 'Permanent Marker', cursive;
+		}
+	}
+}

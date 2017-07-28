@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PersonalSite</title>
+    <title><%= @page_title.presence || "The Personal Site of Ben Granas"%></title>
+    <meta name="description" content="The personal site, portfolio, and resume of Ben Granas">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
   </head>
 
   <body>
+	<div class="nav-container">
+		<div class="nav-right">
+			<ul class="nav-list">
+				<li class="nav-item"><span>Photography</span></li>
+				<li class="nav-item"><span>Resume</span></li>
+				<li class="nav-item"><span>About</span></li>
+			</ul>
+		</div>
+	</div>
+
     <%= yield %>
   </body>
 </html>

@@ -1,0 +1,41 @@
+.nav-container {
+	height: $nav-bar-height;
+	color: transparent;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+
+	.nav-right {
+		width: 500px;
+		float: right;
+		height: 100%;
+		margin-right: 30px;
+
+		.nav-list {
+			list-style-type: none;
+			width: 100%;
+			line-height: $nav-bar-height;
+
+			.nav-item {
+				color: white;
+				display: inline;
+				margin-right: 15px;
+				margin-left: 15px;
+
+				span {
+					font-size: 18px;
+					text-transform: uppercase;
+				}
+
+				.nav-item:first-of-type {
+					margin-left: 0px;
+				}
+
+				.nav-item:last-of-type {
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+}
