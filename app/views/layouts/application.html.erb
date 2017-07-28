@@ -24,11 +24,9 @@
 	</div>
 
 	<% if @main %>
-		<section class="hero-section">	
-			<div class="pages-hero">
-				<h1><%= @main %></h1>
-			</div>
-		</section>
+		<div class="pages-hero">
+			<h1><%= @main %></h1>
+		</div>
 	<% end %>
 
     <%= yield %>

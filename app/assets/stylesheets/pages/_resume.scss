@@ -1,0 +1,29 @@
+.intro {
+	text-align: center;
+	span {
+		font-size: 42px;
+	}
+
+	.resume-nav {
+		list-style-type: none;
+		line-height: 24px;
+
+		.resume-nav-item {
+			display: inline;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.flex-container {
+	display: flex;
+
+	.left-item-1 {
+		order: 1;
+		flex-grow: 1;
+	}
+	.right-item-1 {
+		order: 2;
+		flex-grow: 3;
+	}
+}
