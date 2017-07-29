@@ -15,7 +15,7 @@ gem 'puma', '~> 3.8', '>= 3.8.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Bootstrap 3: https://github.com/twbs/bootstrap-sass#a-ruby-on-rails
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+#gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Font-awesome

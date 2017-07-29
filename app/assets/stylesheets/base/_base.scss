@@ -22,6 +22,10 @@ $lg-min-width: 1200px;
 @media (min-width: $lg-min-width) { // lg
 }
 
+body {
+  margin: 0px;
+}
+
 a {
   color: white;
   

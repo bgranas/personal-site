@@ -10,12 +10,11 @@
 		width: 500px;
 		float: right;
 		height: 100%;
-		margin-right: 30px;
 
 		.nav-list {
 			list-style-type: none;
-			width: 100%;
 			line-height: $nav-bar-height;
+			margin-right: 0px;
 
 			.nav-item {
 				color: white;
