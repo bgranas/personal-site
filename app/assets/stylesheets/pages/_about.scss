@@ -1,0 +1,15 @@
+.lower {
+	height: 70vh;
+
+	.photo-container {
+		margin: auto;
+		max-width: 500px;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: $sm-max-width) { //sm
+	height: 100%;
+}

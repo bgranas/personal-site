@@ -22,16 +22,21 @@ $lg-min-width: 1200px;
 @media (min-width: $lg-min-width) { // lg
 }
 
+//colors
+$dark-blue: #2d2d5f;
+$dark-blue-hover: #686884;
+
 body {
   margin: 0px;
 }
 
 a {
-  color: white;
+  color: $dark-blue;
+  text-decoration: none;
   
 
   &:hover {
-    color: lightgrey;
+    color: $dark-blue-hover;
     text-decoration: none;
   }
 }
@@ -47,30 +52,35 @@ section {
   margin-bottom: 10px;
 }
 
-/*html,
+html,
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Rubik', sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
   background-color: white;
-  color: $gray;
+  color: black;
 }
 
-h1,
-h2,
-h3,
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
 h4 {
-  color: $dark-blue-text;
+  font-size: 18px;
+  color: black;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
-a {
-  color: $primary-color;
-  cursor: pointer;
-  transition: all 0.5s ease;
-
-  &:hover {
-    color: darken($primary-color, 10%);
+@media only screen and (max-width: $xs-max-width-landscape){ // xs
+  h2 {
+    font-size: 28px;
   }
 }
-*/

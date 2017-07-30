@@ -1,7 +1,14 @@
 .intro {
 	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 60px;
 	span {
-		font-size: 42px;
+		font-size: 60px;
+		margin-bottom: 25px;
+	}
+
+	.row {
+		margin-top: 20px;
 	}
 
 	.resume-nav {
@@ -11,19 +18,67 @@
 		.resume-nav-item {
 			display: inline;
 			text-transform: uppercase;
+			margin-left: 20px;
+			margin-right: 20px;
 		}
 	}
 }
 
-.flex-container {
-	display: flex;
+section {
+	margin-top: 40px;
 
-	.left-item-1 {
-		order: 1;
-		flex-grow: 1;
+	.row {
+		margin-bottom: 35px;
 	}
-	.right-item-1 {
-		order: 2;
-		flex-grow: 3;
+	.sub-title {
+		text-transform: uppercase;
+		border-bottom: 1px solid black;
+	}
+
+	.location-holder {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		i {
+			color: $dark-blue;
+		}
+
+		p {
+			display: inline;
+    	margin-left: 10px;
+		}
+	}
+
+}
+
+.experience-section {
+
+	.resume-item-container {
+		border-left: 1px solid black;
+	}
+}
+
+@media only screen and (max-width: $xs-max-width-landscape) { //xs
+	.intro {
+		span {
+			font-size: 54px;
+		}
+
+	}
+
+	section {
+		.details {
+			text-align: left;
+		}
+	}
+
+	.experience-section {
+
+		.resume-item-container {
+			border-left: none;
+		}
+	}
+
+	.xs-seperator {
+		border-top: 1px solid gray;
 	}
 }

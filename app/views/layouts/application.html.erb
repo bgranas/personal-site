@@ -9,6 +9,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://use.fontawesome.com/7ff43fbcaf.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<script>
@@ -21,6 +22,22 @@
 		  ga('send', 'pageview');
 
 		</script>
+
+    <!-- ************ FACEBOOK OPEN GRAPH TAGS ***************** -->
+    <meta property="og:url"  content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="<%= @page_title.presence || "BenGranas.com | The personal site of Ben Granas" %>"/>
+    <meta property="og:description" content="<%= @meta_description.presence || "The personal site, portfolio, and resume of Ben Granas" %>"/>
+    <meta property="og:image" content="<%= image_url("Ben-Granas-logo.jpg") %>"/>
+    <meta property="og:site_name" content="BenGranas.com"/>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="BenGranas.com">
+    <meta name="twitter:title" content="<%= @page_title.presence || "BenGranas.com | The personal site of Ben Granas" %>">
+    <meta name="twitter:description" content="<%= @meta_description.presence || "The personal site, portfolio, and resume of Ben Granas" %>">
+    <meta name="twitter:image:src" content="<%= image_url("Ben-Granas-logo.jpg") %>">
+    
   </head>
 
   <body>

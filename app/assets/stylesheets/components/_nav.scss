@@ -25,20 +25,22 @@
 				span {
 					font-size: 18px;
 					text-transform: uppercase;
-				}
+					a {
+					  color: white;
+					  text-decoration: none;
+					  
 
-				.nav-item:first-of-type {
-					margin-left: 0px;
-				}
-
-				.nav-item:last-of-type {
-					margin-right: 0px;
+					  &:hover {
+					    color: lightgrey;
+					    text-decoration: none;
+					  }
+					}
 				}
 			}
 		}
 	}
 
-	@media only screen and (max-width: $sm-max-width) { // xs
+	@media only screen and (max-width: $sm-max-width) { // sm
 
 			.nav-right {
 				float: none;
@@ -60,4 +62,15 @@
 			}
 
 	}
+	@media only screen and (max-width: $xs-max-width-landscape) { //xs
+		.nav-list {
+			line-height: 15px;
+		}
+	}
+
+	@media only screen and (max-width: $xs-max-width-portrait) { // xs portrait only
+		.nav-list {
+			line-height: $nav-bar-height;
+		}
+	} 
 }
