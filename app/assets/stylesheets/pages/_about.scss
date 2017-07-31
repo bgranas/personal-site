@@ -1,15 +1,32 @@
 .lower {
-	height: 70vh;
+	height: 100vh - $pages-hero-height;
 
 	.photo-container {
 		margin: auto;
+		margin-top: 10%;
 		max-width: 500px;
 	}
 	img {
 		width: 100%;
 	}
+
+	.text-container {
+		h2 {
+			font-weight: 300;
+			color: gray;
+			font-size: 72px;
+		}
+	}
 }
 
 @media only screen and (max-width: $sm-max-width) { //sm
-	height: 100%;
+
+	.lower {
+		height: 100%;
+		.text-container {
+			h2 {
+				font-size: 52px;
+			}
+		}
+	}
 }

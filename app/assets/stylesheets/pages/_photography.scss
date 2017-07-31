@@ -1,0 +1,25 @@
+.photography {
+	margin-top: 40px;
+	.img-col {
+		position: relative;
+		.image-container {
+
+			max-width:100%;
+
+			img {
+				max-width: 100%;
+			}
+
+			.vert {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		.img-credits {
+			position: absolute;
+	    bottom: 15px;
+	    left: 30px;
+	    color: white;
+		}
+	}
+}

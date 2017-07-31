@@ -42,35 +42,37 @@
 
 	@media only screen and (max-width: $sm-max-width) { // sm
 
-			.nav-right {
-				float: none;
-				width: 100%;
-				.nav-list {
-					padding: 0px;
-	    		text-align: center;
-	    		line-height: 60px;
+		.nav-right {
+			float: none;
+			width: 100%;
+			.nav-list {
+				padding: 0px;
+    		text-align: center;
+    		line-height: 30px;
 
-					.nav-item {
-						margin-right: 5px;
-						margin-left: 5px;
-					
-						span {
-							font-size: 18px;
-						}
+				.nav-item {
+					margin-right: 5px;
+					margin-left: 5px;
+				
+					span {
+						font-size: 18px;
 					}
-				}	
-			}
-
-	}
-	@media only screen and (max-width: $xs-max-width-landscape) { //xs
-		.nav-list {
-			line-height: 15px;
+				}
+			}	
 		}
 	}
+}
 
-	@media only screen and (max-width: $xs-max-width-portrait) { // xs portrait only
+@media only screen and (max-width: $xs-max-width-landscape) { //xs
+	.nav-container {
+		height: 30vh;
+	}
+}
+
+@media only screen and (max-width: $xs-max-width-portrait) { // xs portrait only
+	.nav-container {
 		.nav-list {
 			line-height: $nav-bar-height;
 		}
-	} 
-}
+	}
+} 

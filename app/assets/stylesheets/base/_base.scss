@@ -8,6 +8,11 @@ $md-min-width: 992px;
 $md-max-width: 1199px;
 $lg-min-width: 1200px;
 
+//Nav
+$nav-bar-height: 5vh;
+
+$pages-hero-height: 20vh + $nav-bar-height;
+
 /* Media Queries for reference */
 @media only screen and (max-width: $xs-max-width-portrait){ // xs
 
@@ -74,9 +79,13 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: black;
+  color: #7d7676;
   margin-top: 0px;
   margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 17px;
 }
 
 @media only screen and (max-width: $xs-max-width-landscape){ // xs
