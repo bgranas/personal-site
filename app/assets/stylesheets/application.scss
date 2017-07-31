@@ -16,6 +16,7 @@
 //Utilities
 @import
 	'utilities/variables',
+	'utilities/flexboxgrid',
 	'base/base';
 
 //Components
@@ -29,10 +30,3 @@
 	'pages/resume',
 	'pages/photography',
 	'pages/about';
-
-//Vendor
-@import
-	'flexboxgrid.css';
-	// 'flexboxgrid.min.css',
-	// 'stylesheets/index.css',
-	// 'index.min.css';
