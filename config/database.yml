@@ -12,7 +12,7 @@ default: &default
 development:
   adapter: postgresql
   database: personal_site_development
-  username: pguser
+  username: myapp
   password: password1
   host: localhost
   encoding: UTF8
